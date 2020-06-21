@@ -1,17 +1,17 @@
 window.addEventListener("load", function(){
-    var section3 = document.getElementById("section3");
+    var section4 = document.getElementById("section4");
     
-    var txtX = section3.getElementsByClassName("txt-x")[0];
-    var txtY = section3.getElementsByClassName("txt-y")[0];
-    var btnAdd = section3.getElementsByClassName("btn-add")[0];
-    var txtSum = section3.getElementsByClassName("txt-sum")[0];
+    var txtX = section4.querySelector(".txt-x");
+    var txtY = section4.querySelector(".txt-y");
+    var btnAdd = section4.querySelector(".btn-add");
+    var txtSum = section4.querySelector(".txt-sum");
 
     btnAdd.onclick = function(){ 
         var x = parseInt(txtX.value);
         var y = parseInt(txtY.value);
 
         txtSum.value = x+y; 
-    }
+    };
 })
 window.addEventListener("load", function(){
     var section2 = document.getElementById("section2");
@@ -27,7 +27,7 @@ window.addEventListener("load", function(){
         var y = parseInt(txtY.value);
 
         txtSum.value = x+y; 
-    }
+    };
 })
 
 window.addEventListener("load", function(){
