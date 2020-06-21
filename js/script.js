@@ -1,4 +1,19 @@
 window.addEventListener("load", function(){
+    var section3 = document.getElementById("section3");
+    
+    var txtX = section3.getElementsByClassName("txt-x")[0];
+    var txtY = section3.getElementsByClassName("txt-y")[0];
+    var btnAdd = section3.getElementsByClassName("btn-add")[0];
+    var txtSum = section3.getElementsByClassName("txt-sum")[0];
+
+    btnAdd.onclick = function(){ 
+        var x = parseInt(txtX.value);
+        var y = parseInt(txtY.value);
+
+        txtSum.value = x+y; 
+    }
+})
+window.addEventListener("load", function(){
     var section2 = document.getElementById("section2");
     var inputs =  section2.getElementsByTagName("input");
 
